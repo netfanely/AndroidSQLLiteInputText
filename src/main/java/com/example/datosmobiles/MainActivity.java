@@ -19,5 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public void Guardar(View view){
         String movimiento = mtiMovimiento.getEditText().getText().toString();
         String monto = mtiMonto.getEditText().getText().toString();
+        Datos datos = new Datos(this);
+        datos.registrarMovimiento(datos,movimiento,Float.parseFloat(monto),1);
     }
 }
