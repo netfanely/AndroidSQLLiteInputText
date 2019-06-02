@@ -21,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
         String monto = mtiMonto.getEditText().getText().toString();
         Datos datos = new Datos(this);
         datos.registrarMovimiento(datos,movimiento,Float.parseFloat(monto),1);
+
     }
 }
